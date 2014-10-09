@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout android:id="@+id/ll" android:layout_width="match_parent"
+    android:layout_height="110dp" android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp">
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/btnStyleShakespeare"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/view"
+        android:text="View All Assets" 
+       />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/btnStyleBeige"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/budget_icon"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Budget" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/btnStyleShakespeare"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:drawableTop="@drawable/categories"
+        android:text="Manage Categories" />
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/button5"
+	    android:layout_marginTop="20dp"
+	    android:layout_below="@id/ll"
+	    android:orientation="vertical" >
+
+		<TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:fontFamily="sans-serif"
+		    android:gravity="center_horizontal"
+		    android:text="INFORMATION"
+		    android:textSize="18sp"
+		    android:textStyle="bold" />
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="" />
+
+	    </LinearLayout>
+	    
+	</LinearLayout>
+		
+
+
+	<Button
+	    android:id="@+id/button4"
+	    style="@style/btnStyleArsenic"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="23dp"
+	    android:layout_marginLeft="20dp"
+	    android:text="Identify Assets"
+	    />
+
+	<Button
+	    android:id="@+id/button5"
+	    style="@style/btnStyleArsenic"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginBottom="20dp"
+	    android:text="Reports" 
+	    android:layout_above="@id/button4"/>
+	
+	
+</RelativeLayout>
